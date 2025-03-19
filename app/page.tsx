@@ -94,7 +94,7 @@ export default function Home() {
                         href={service.href}
                         className="text-sm font-semibold leading-6 text-primary flex items-center gap-1"
                       >
-                        Learn more <ArrowRight className="h-4 w-4" />
+                        Learn more about {service.name.toLowerCase()} <ArrowRight className="h-4 w-4" />
                       </Link>
                     </p>
                   </dd>
@@ -217,7 +217,7 @@ export default function Home() {
               <Button className="bg-white text-primary hover:bg-gray-100">Contact Us</Button>
             </Link>
             <Link href="/services" className="text-sm font-semibold leading-6 text-white flex items-center gap-1">
-              Learn more <ArrowRight className="h-4 w-4" />
+              Learn more about our services <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
         </div>
