@@ -220,6 +220,53 @@ export default function AboutPage() {
       </section>
       */}
 
+      {/* Certifications Section */}
+      <section className="py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our Certifications</h2>
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+              We maintain the highest standards of business compliance and regulatory requirements.
+            </p>
+          </div>
+          <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 sm:gap-12 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+            <div className="flex flex-col items-center">
+              <Image
+                src="/images/certifications/GST_Registration_Jhurgreens.jpg"
+                alt="GST Registration Certificate"
+                className="w-full rounded-lg shadow-lg object-contain bg-white"
+                width={400}
+                height={566}
+              />
+              <h3 className="mt-6 text-lg font-semibold text-gray-900">GST Registration</h3>
+              <p className="mt-2 text-sm text-gray-600 text-center">Goods and Services Tax Registration Certificate</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <Image
+                src="/images/certifications/Import_Export_Code_Jhurgreens.jpg"
+                alt="Import Export Code Certificate"
+                className="w-full rounded-lg shadow-lg object-contain bg-white"
+                width={400}
+                height={566}
+              />
+              <h3 className="mt-6 text-lg font-semibold text-gray-900">Import Export Code</h3>
+              <p className="mt-2 text-sm text-gray-600 text-center">IEC Certificate for International Trade</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <Image
+                src="/images/certifications/Udyam_Certificate.jpg"
+                alt="Udyam Certificate"
+                className="w-full rounded-lg shadow-lg object-contain bg-white"
+                width={400}
+                height={566}
+              />
+              <h3 className="mt-6 text-lg font-semibold text-gray-900">Udyam Certificate</h3>
+              <p className="mt-2 text-sm text-gray-600 text-center">MSME Registration Certificate</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="bg-primary">
         <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:justify-between lg:px-8">
