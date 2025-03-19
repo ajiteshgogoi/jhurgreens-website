@@ -9,7 +9,7 @@ import Footer from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "JhurGreens International | Export & Sourcing Agency",
+  title: "JhurGreens International | Sourcing Agency and Exporter",
   description: "Professional export and sourcing agency specializing in product sourcing, manufacturing partnerships, quality inspection, and shipping logistics. Connect with reliable manufacturers worldwide.",
   generator: "Next.js",
   applicationName: "JhurGreens International",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://jhurgreens.com",
-    title: "JhurGreens International | Export & Sourcing Agency",
+    title: "JhurGreens International | Sourcing Agency and Exporter",
     description: "Professional export and sourcing agency specializing in product sourcing, manufacturing partnerships, quality inspection, and shipping logistics. Connect with reliable manufacturers worldwide.",
     siteName: "JhurGreens International",
     images: [
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "JhurGreens International | Export & Sourcing Agency",
+    title: "JhurGreens International | Sourcing Agency and Exporter",
     description: "Professional export and sourcing agency specializing in product sourcing, manufacturing partnerships, quality inspection, and shipping logistics.",
     images: ["/logo.png"],
     creator: "@jhurgreens",

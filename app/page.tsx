@@ -17,7 +17,7 @@ export default function Home() {
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600">
                 JhurGreens International connects businesses worldwide with quality products and reliable manufacturing
-                partners. We handle everything from sourcing to shipping.
+                partners in India. We handle everything from sourcing to shipping.
               </p>
               <div className="mt-10 flex items-center gap-x-6">
                 <Link href="/services">
@@ -174,7 +174,7 @@ export default function Home() {
               {[
                 {
                   name: "Global Network",
-                  description: "Access to a vast network of suppliers and manufacturers across the globe.",
+                  description: "Access to a vast network of suppliers and manufacturers across India.",
                 },
                 {
                   name: "Quality Assurance",
