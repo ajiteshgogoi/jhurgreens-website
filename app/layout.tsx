@@ -10,10 +10,10 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "JhurGreens International | Sourcing Agency and Exporter",
-  description: "Professional export and sourcing agency specializing in product sourcing, manufacturing partnerships, quality inspection, and shipping logistics. Connect with reliable manufacturers worldwide.",
+  description: "JhurGreens International is a premier sourcing agency and exporter from India, specializing in product sourcing, manufacturing partnerships, quality inspection and shipping logistics.",
   generator: "Next.js",
   applicationName: "JhurGreens International",
-  keywords: ["export agency", "product sourcing", "manufacturing partnerships", "quality inspection", "shipping logistics", "global trade", "international business"],
+  keywords: ["exporter", "sourcing agency", "product sourcing", "manufacturing partnerships", "quality inspection", "shipping logistics", "global trade", "international business"],
   authors: [{ name: "JhurGreens International" }],
   colorScheme: "light",
   creator: "JhurGreens International",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://jhurgreens.com",
     title: "JhurGreens International | Sourcing Agency and Exporter",
-    description: "Professional export and sourcing agency specializing in product sourcing, manufacturing partnerships, quality inspection, and shipping logistics. Connect with reliable manufacturers worldwide.",
+    description: "JhurGreens International is a premier sourcing agency and exporter from India, specializing in product sourcing, manufacturing partnerships, quality inspection and shipping logistics.",
     siteName: "JhurGreens International",
     images: [
       {
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "JhurGreens International | Sourcing Agency and Exporter",
-    description: "Professional export and sourcing agency specializing in product sourcing, manufacturing partnerships, quality inspection, and shipping logistics.",
+    description: "JhurGreens International is a premier sourcing agency and exporter from India, specializing in product sourcing, manufacturing partnerships, quality inspection and shipping logistics.",
     images: ["/logo.png"],
     creator: "@jhurgreens",
     site: "@jhurgreens",
