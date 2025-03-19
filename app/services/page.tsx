@@ -1,4 +1,3 @@
-import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Globe, TrendingUp, ShieldCheck, CheckCircle, ArrowRight } from "lucide-react"
@@ -11,7 +10,6 @@ interface Service {
   icon: ReactElement
   content: string
   features: string[]
-  image: string
 }
 
 export default function ServicesPage(): ReactElement {
@@ -28,8 +26,7 @@ export default function ServicesPage(): ReactElement {
         "Sample coordination and evaluation",
         "Price negotiation and comparison",
         "Supplier relationship management"
-      ],
-      image: "/placeholder.svg?height=600&width=800"
+      ]
     },
     {
       id: "manufacturing-partnership",
@@ -43,8 +40,7 @@ export default function ServicesPage(): ReactElement {
         "Technical specification development",
         "Contract negotiation and management",
         "Ongoing relationship management"
-      ],
-      image: "/placeholder.svg?height=600&width=800"
+      ]
     },
     {
       id: "quality-inspection",
@@ -58,8 +54,7 @@ export default function ServicesPage(): ReactElement {
         "Pre-shipment inspection",
         "Defect identification and resolution",
         "Quality control documentation"
-      ],
-      image: "/placeholder.svg?height=600&width=800"
+      ]
     },
     {
       id: "shipping-logistics",
@@ -73,8 +68,7 @@ export default function ServicesPage(): ReactElement {
         "Shipping method selection and optimization",
         "Cargo insurance arrangement",
         "Delivery tracking and management"
-      ],
-      image: "/placeholder.svg?height=600&width=800"
+      ]
     }
   ]
 
@@ -95,40 +89,31 @@ export default function ServicesPage(): ReactElement {
       {/* Services Overview */}
       <section className="py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-            <div>
-              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Comprehensive Export & Sourcing Solutions</h2>
-              <p className="mt-6 text-lg leading-8 text-gray-600">
-                We provide end-to-end services to streamline your global sourcing and export operations, helping you save time, reduce costs, and minimize risks.
-              </p>
-              <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
-                {services.map((service) => (
-                  <div key={service.id} className="relative pl-9">
-                    <dt className="inline font-semibold text-gray-900">
-                      <div className="absolute left-1 top-1 text-primary">
-                        <CheckCircle className="h-5 w-5" />
-                      </div>
-                      {service.title}.
-                    </dt>
-                    <dd className="inline"> {service.description}</dd>
-                  </div>
-                ))}
-              </dl>
-              <div className="mt-10">
-                <Link href="/contact">
-                  <Button className="bg-primary hover:bg-primary/90">
-                    Contact Us
-                  </Button>
-                </Link>
-              </div>
+          <div className="mx-auto max-w-2xl">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Comprehensive Export & Sourcing Solutions</h2>
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+              We provide end-to-end services to streamline your global sourcing and export operations, helping you save time, reduce costs, and minimize risks.
+            </p>
+            <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
+              {services.map((service) => (
+                <div key={service.id} className="relative pl-9">
+                  <dt className="inline font-semibold text-gray-900">
+                    <div className="absolute left-1 top-1 text-primary">
+                      <CheckCircle className="h-5 w-5" />
+                    </div>
+                    {service.title}.
+                  </dt>
+                  <dd className="inline"> {service.description}</dd>
+                </div>
+              ))}
+            </dl>
+            <div className="mt-10">
+              <Link href="/contact">
+                <Button className="bg-primary hover:bg-primary/90">
+                  Contact Us
+                </Button>
+              </Link>
             </div>
-            <Image
-              src="/placeholder.svg?height=600&width=800"
-              alt="JhurGreens Services"
-              className="w-full rounded-xl shadow-xl ring-1 ring-gray-400/10"
-              width={800}
-              height={600}
-            />
           </div>
         </div>
       </section>
@@ -141,39 +126,28 @@ export default function ServicesPage(): ReactElement {
           className={`py-24 sm:py-32 ${index % 2 === 1 ? 'bg-gray-50' : 'bg-white'}`}
         >
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className={`mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 ${index % 2 === 1 ? 'lg:items-center' : 'lg:items-start'}`}>
-              <div className={index % 2 === 1 ? 'order-2' : 'order-1'}>
-                <div className="flex items-center gap-x-2">
-                  {service.icon}
-                  <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{service.title}</h2>
-                </div>
-                <p className="mt-6 text-lg leading-8 text-gray-600">
-                  {service.content}
-                </p>
-                <ul className="mt-8 space-y-3">
-                  {service.features.map((feature, i) => (
-                    <li key={i} className="flex gap-x-3">
-                      <CheckCircle className="h-6 w-6 flex-none text-primary" />
-                      <span className="text-gray-600">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <div className="mt-10">
-                  <Link href="/contact">
-                    <Button className="bg-primary hover:bg-primary/90">
-                      Inquire About This Service
-                    </Button>
-                  </Link>
-                </div>
+            <div className="mx-auto max-w-3xl">
+              <div className="flex items-center gap-x-2">
+                {service.icon}
+                <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{service.title}</h2>
               </div>
-              <div className={index % 2 === 1 ? 'order-1' : 'order-2'}>
-                <Image
-                  src={service.image || "/placeholder.svg"}
-                  alt={service.title}
-                  className="w-full rounded-xl shadow-xl ring-1 ring-gray-400/10"
-                  width={800}
-                  height={600}
-                />
+              <p className="mt-6 text-lg leading-8 text-gray-600">
+                {service.content}
+              </p>
+              <ul className="mt-8 space-y-3">
+                {service.features.map((feature, i) => (
+                  <li key={i} className="flex gap-x-3">
+                    <CheckCircle className="h-6 w-6 flex-none text-primary" />
+                    <span className="text-gray-600">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-10">
+                <Link href="/contact">
+                  <Button className="bg-primary hover:bg-primary/90">
+                    Inquire About This Service
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
