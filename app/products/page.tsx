@@ -109,10 +109,12 @@ export default function ProductsPage() {
               <Card key={category.id} id={category.id} className="flex flex-col overflow-hidden">
                 <div className="relative h-48 w-full">
                   <Image
-                    src={category.image || "/placeholder.svg"}
+                    src={category.image}
                     alt={category.title}
                     fill
                     className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw"
+                    quality={85}
                   />
                 </div>
                 <CardHeader>
