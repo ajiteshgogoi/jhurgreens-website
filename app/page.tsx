@@ -32,10 +32,13 @@ export default function Home() {
           <div className="relative lg:col-span-5 lg:-mr-8 xl:absolute xl:inset-0 xl:left-1/2 xl:mr-0">
             <Image
               className="aspect-[3/2] w-full bg-gray-50 object-cover lg:absolute lg:inset-0 lg:aspect-auto lg:h-full"
-              src="/placeholder.svg?height=800&width=1200"
-              alt="JhurGreens International"
-              width={1200}
-              height={800}
+              src="/images/home.jpg"
+              alt="JhurGreens International Global Operations"
+              width={1920}
+              height={1080}
+              priority
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+              quality={85}
             />
           </div>
         </div>

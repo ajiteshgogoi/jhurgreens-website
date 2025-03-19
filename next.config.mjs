@@ -19,7 +19,9 @@ const nextConfig = {
     parallelServerCompiles: true,
   },
   images: {
-    domains: ['hebbkx1anhila5yf.public.blob.vercel-storage.com']
+    domains: ['hebbkx1anhila5yf.public.blob.vercel-storage.com'],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+    formats: ['image/webp']
   },
 }
 
