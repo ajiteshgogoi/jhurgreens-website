@@ -22,7 +22,7 @@ export default function AboutPage() {
       {/* Our Story */}
       <section className="py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start">
+          <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center">
             <div>
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our Story</h2>
               <p className="mt-6 text-lg leading-8 text-gray-600">
@@ -43,14 +43,14 @@ export default function AboutPage() {
                 </p>
                 <p>
                   Today, JhurGreens International stands as a leader in the export and sourcing industry, known for our
-                  integrity, expertise, and dedication to helping businesses succeed in the global marketplace.
+                  integrity, expertise and dedication to helping businesses succeed in the global marketplace.
                 </p>
               </div>
             </div>
             <Image
               src="/images/about/story.jpg"
               alt="JhurGreens International Story"
-              className="w-full rounded-xl shadow-xl ring-1 ring-gray-400/10"
+              className="w-full rounded-xl shadow-xl ring-1 ring-gray-400/10 lg:order-last"
               width={800}
               height={600}
             />
@@ -100,31 +100,31 @@ export default function AboutPage() {
                       <li className="flex items-center gap-2">
                         <CheckCircle className="h-5 w-5 text-primary" />
                         <span>
-                          <strong>Integrity:</strong> We conduct business with honesty and transparency.
+                          <strong>Growth:</strong> We thrive on continuous expansion and development.
                         </span>
                       </li>
                       <li className="flex items-center gap-2">
                         <CheckCircle className="h-5 w-5 text-primary" />
                         <span>
-                          <strong>Quality:</strong> We are committed to sourcing high-quality products.
+                          <strong>Integrity:</strong> We conduct business with unwavering honesty and transparency.
                         </span>
                       </li>
                       <li className="flex items-center gap-2">
                         <CheckCircle className="h-5 w-5 text-primary" />
                         <span>
-                          <strong>Reliability:</strong> We deliver on our promises and meet deadlines.
+                          <strong>Excellence:</strong> We strive for exceptional standards in everything we do.
                         </span>
                       </li>
                       <li className="flex items-center gap-2">
                         <CheckCircle className="h-5 w-5 text-primary" />
                         <span>
-                          <strong>Customer Focus:</strong> We prioritize our clients' needs and satisfaction.
+                          <strong>Quality:</strong> We are committed to sourcing and delivering premium products.
                         </span>
                       </li>
                       <li className="flex items-center gap-2">
                         <CheckCircle className="h-5 w-5 text-primary" />
                         <span>
-                          <strong>Innovation:</strong> We continuously improve our processes and services.
+                          <strong>Reliability:</strong> We consistently deliver on our promises and meet commitments.
                         </span>
                       </li>
                     </ul>
