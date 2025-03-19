@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "JhurGreens International | Export & Sourcing Agency",
   description:
     "Professional export and sourcing agency specializing in product sourcing, manufacturing partnerships, quality inspection, and shipping logistics.",
-    generator: 'v0.dev'
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -21,9 +21,9 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="light" style={{ colorScheme: 'light' }}>
       <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
+        <ThemeProvider attribute="class" defaultTheme="light" forcedTheme="light" enableSystem={false} disableTransitionOnChange>
           <div className="flex min-h-screen flex-col">
             <Header />
             <main className="flex-1">{children}</main>
@@ -34,7 +34,3 @@ export default function RootLayout({
     </html>
   )
 }
-
-
-
-import './globals.css'
