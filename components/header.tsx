@@ -27,7 +27,7 @@ export default function Header() {
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">JhurGreens International</span>
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/JhurGreens%20Logo%20Final-0Esq8r8sBYwe6fBdMil1hT7NWysb0p.png"
+              src="/logo.png"
               alt="JhurGreens Logo"
               width={180}
               height={60}
@@ -76,7 +76,7 @@ export default function Header() {
               <Link href="/" className="-m-1.5 p-1.5">
                 <span className="sr-only">JhurGreens International</span>
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/JhurGreens%20Logo%20Final-0Esq8r8sBYwe6fBdMil1hT7NWysb0p.png"
+                  src="/logo.png"
                   alt="JhurGreens Logo"
                   width={180}
                   height={60}

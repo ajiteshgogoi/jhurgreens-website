@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-4">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/JhurGreens%20Logo%20Final-0Esq8r8sBYwe6fBdMil1hT7NWysb0p.png"
+              src="/logo.png"
               alt="JhurGreens Logo"
               width={180}
               height={60}
