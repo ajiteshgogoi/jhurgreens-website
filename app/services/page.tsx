@@ -2,9 +2,20 @@ import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Globe, TrendingUp, ShieldCheck, CheckCircle, ArrowRight } from "lucide-react"
+import { ReactElement } from "react"
 
-export default function ServicesPage() {
-  const services = [
+interface Service {
+  id: string
+  title: string
+  description: string
+  icon: ReactElement
+  content: string
+  features: string[]
+  image: string
+}
+
+export default function ServicesPage(): ReactElement {
+  const services: Service[] = [
     {
       id: "product-sourcing",
       title: "Product Sourcing",
@@ -131,38 +142,39 @@ export default function ServicesPage() {
         >
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className={`mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 ${index % 2 === 1 ? 'lg:items-center' : 'lg:items-start'}`}>
-            <div className={index % 2 === 1 ? 'order-2' : 'order-1'}>
-              <div className="flex items-center gap-x-2">
-                {service.icon}
-                <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{service.title}</h2>
+              <div className={index % 2 === 1 ? 'order-2' : 'order-1'}>
+                <div className="flex items-center gap-x-2">
+                  {service.icon}
+                  <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{service.title}</h2>
+                </div>
+                <p className="mt-6 text-lg leading-8 text-gray-600">
+                  {service.content}
+                </p>
+                <ul className="mt-8 space-y-3">
+                  {service.features.map((feature, i) => (
+                    <li key={i} className="flex gap-x-3">
+                      <CheckCircle className="h-6 w-6 flex-none text-primary" />
+                      <span className="text-gray-600">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div className="mt-10">
+                  <Link href="/contact">
+                    <Button className="bg-primary hover:bg-primary/90">
+                      Inquire About This Service
+                    </Button>
+                  </Link>
+                </div>
               </div>
-              <p className="mt-6 text-lg leading-8 text-gray-600">
-                {service.content}
-              </p>
-              <ul className="mt-8 space-y-3">
-                {service.features.map((feature, i) => (
-                  <li key={i} className="flex gap-x-3">
-                    <CheckCircle className="h-6 w-6 flex-none text-primary" />
-                    <span className="text-gray-600">{feature}</span>
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-10">
-                <Link href="/contact">
-                  <Button className="bg-primary hover:bg-primary/90">
-                    Inquire About This Service
-                  </Button>
-                </Link>
+              <div className={index % 2 === 1 ? 'order-1' : 'order-2'}>
+                <Image
+                  src={service.image || "/placeholder.svg"}
+                  alt={service.title}
+                  className="w-full rounded-xl shadow-xl ring-1 ring-gray-400/10"
+                  width={800}
+                  height={600}
+                />
               </div>
-            </div>
-            <div className={index % 2 === 1 ? 'order-1' : 'order-2'}>
-              <Image
-                src={service.image || "/placeholder.svg"}
-                alt={service.title}
-                className="w-full rounded-xl shadow-xl ring-1 ring-gray-400/10"
-                width={800}
-                height={600}
-              />
             </div>
           </div>
         </section>
@@ -191,4 +203,3 @@ export default function ServicesPage() {
     </div>
   )
 }
-

@@ -18,6 +18,9 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
+  images: {
+    domains: ['hebbkx1anhila5yf.public.blob.vercel-storage.com']
+  },
 }
 
 mergeConfig(nextConfig, userConfig)
