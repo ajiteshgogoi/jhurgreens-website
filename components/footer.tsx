@@ -11,8 +11,8 @@ export default function Footer() {
             <Image
               src="/logo.png"
               alt="JhurGreens Logo"
-              width={180}
-              height={60}
+              width={80}
+              height={80}
               className="h-12 w-auto"
             />
             <p className="text-sm text-gray-600 max-w-xs">

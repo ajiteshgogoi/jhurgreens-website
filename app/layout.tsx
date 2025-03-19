@@ -9,6 +9,13 @@ import Script from 'next/script'
 
 const inter = Inter({ subsets: ["latin"] })
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  colorScheme: "light"
+}
+
 export const metadata: Metadata = {
   title: "JhurGreens International | Leading Export & Sourcing Agency in India",
   description: "JhurGreens International is a premier sourcing agency and exporter from India, specializing in product sourcing, manufacturing partnerships, quality inspection and shipping logistics. Connect with us for global trade solutions.",
@@ -16,7 +23,6 @@ export const metadata: Metadata = {
   applicationName: "JhurGreens International",
   keywords: ["export agency india", "sourcing agency", "product sourcing", "manufacturing partnerships", "quality inspection", "shipping logistics", "global trade", "international business", "indian exports", "trade consultancy"],
   authors: [{ name: "JhurGreens International", url: "https://jhurgreens.com" }],
-  colorScheme: "light",
   creator: "JhurGreens International",
   publisher: "JhurGreens International",
   formatDetection: {
@@ -29,11 +35,7 @@ export const metadata: Metadata = {
     shortcut: "/favicon.ico",
     apple: "/favicon.ico",
   },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
-  },
+  metadataBase: new URL("https://jhurgreens.com"),
   openGraph: {
     type: "website",
     locale: "en_US",
