@@ -16,8 +16,8 @@ export default function Footer() {
               className="h-12 w-auto"
             />
             <p className="text-sm text-gray-600 max-w-xs">
-              JhurGreens International is a leading export and sourcing agency connecting businesses with quality
-              products and reliable manufacturing partners.
+              JhurGreens International is a leading export and sourcing agency connecting businesses worldwide, with quality
+              products and reliable manufacturing partners in India.
             </p>
             <div className="flex space-x-4">
               <Link href="https://www.facebook.com/jhurgreens/" className="text-gray-500 hover:text-primary">
