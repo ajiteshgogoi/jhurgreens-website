@@ -215,8 +215,8 @@ export default function ContactPage() {
                       <Phone className="h-7 w-6 text-primary" aria-hidden="true" />
                     </dt>
                     <dd>
-                      <a className="hover:text-primary" href="tel:+12345678901">
-                        +1 (234) 567-8901
+                      <a className="hover:text-primary" href="tel:+919395877156">
+                        +91-9395877156
                       </a>
                     </dd>
                   </div>
@@ -259,7 +259,7 @@ export default function ContactPage() {
                         <h4 className="font-semibold">Sales Team</h4>
                         <p className="text-sm text-gray-500">For product inquiries and orders</p>
                       </div>
-                      <a href="https://wa.me/12345678901" target="_blank" rel="noopener noreferrer" className="ml-auto">
+                      <a href="https://wa.me/919395877156" target="_blank" rel="noopener noreferrer" className="ml-auto">
                         <Button className="bg-[#25D366] hover:bg-[#25D366]/90">Chat Now</Button>
                       </a>
                     </CardContent>
@@ -286,7 +286,7 @@ export default function ContactPage() {
                         <h4 className="font-semibold">Support Team</h4>
                         <p className="text-sm text-gray-500">For ongoing orders and support</p>
                       </div>
-                      <a href="https://wa.me/12345678902" target="_blank" rel="noopener noreferrer" className="ml-auto">
+                      <a href="https://wa.me/919395877156" target="_blank" rel="noopener noreferrer" className="ml-auto">
                         <Button className="bg-[#25D366] hover:bg-[#25D366]/90">Chat Now</Button>
                       </a>
                     </CardContent>

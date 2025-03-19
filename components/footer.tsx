@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Phone, Mail, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react"
+import { Phone, Mail, MapPin, Facebook, Linkedin, Instagram } from "lucide-react"
 
 export default function Footer() {
   return (
@@ -20,19 +20,15 @@ export default function Footer() {
               products and reliable manufacturing partners.
             </p>
             <div className="flex space-x-4">
-              <Link href="#" className="text-gray-500 hover:text-primary">
+              <Link href="https://www.facebook.com/jhurgreens/" className="text-gray-500 hover:text-primary">
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
               </Link>
-              <Link href="#" className="text-gray-500 hover:text-primary">
-                <Twitter className="h-5 w-5" />
-                <span className="sr-only">Twitter</span>
-              </Link>
-              <Link href="#" className="text-gray-500 hover:text-primary">
+              <Link href="https://www.linkedin.com/company/jhurgreens/" className="text-gray-500 hover:text-primary">
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
-              <Link href="#" className="text-gray-500 hover:text-primary">
+              <Link href="https://www.instagram.com/jhurgreens/" className="text-gray-500 hover:text-primary">
                 <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
               </Link>
@@ -81,11 +77,11 @@ export default function Footer() {
             <ul className="mt-4 space-y-3">
               <li className="flex gap-3">
                 <MapPin className="h-5 w-5 flex-shrink-0 text-primary" />
-                <span className="text-sm text-gray-600">123 Business Avenue, Suite 456, City, Country</span>
+                <span className="text-sm text-gray-600">F No 1A, Dishant Palace, Wireless, Guwahati 781028, Assam, India</span>
               </li>
               <li className="flex gap-3">
                 <Phone className="h-5 w-5 flex-shrink-0 text-primary" />
-                <span className="text-sm text-gray-600">+1 (234) 567-8901</span>
+                <span className="text-sm text-gray-600">+91-9395877156</span>
               </li>
               <li className="flex gap-3">
                 <Mail className="h-5 w-5 flex-shrink-0 text-primary" />
@@ -104,4 +100,3 @@ export default function Footer() {
     </footer>
   )
 }
-
