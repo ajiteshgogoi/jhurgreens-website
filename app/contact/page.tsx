@@ -3,12 +3,11 @@
 import type React from "react"
 
 import { useState } from "react"
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent } from "@/components/ui/card"
-import { Phone, Mail, MapPin, Send, CheckCircle } from "lucide-react"
+import { Phone, Mail, Send, CheckCircle } from "lucide-react"
 
 export default function ContactPage() {
   const [formState, setFormState] = useState({
@@ -212,17 +211,6 @@ export default function ContactPage() {
                 <dl className="mt-10 space-y-6 text-base leading-7 text-gray-600">
                   <div className="flex gap-x-4">
                     <dt className="flex-none">
-                      <span className="sr-only">Address</span>
-                      <MapPin className="h-7 w-6 text-primary" aria-hidden="true" />
-                    </dt>
-                    <dd>
-                      123 Business Avenue, Suite 456
-                      <br />
-                      City, Country
-                    </dd>
-                  </div>
-                  <div className="flex gap-x-4">
-                    <dt className="flex-none">
                       <span className="sr-only">Telephone</span>
                       <Phone className="h-7 w-6 text-primary" aria-hidden="true" />
                     </dt>
@@ -309,28 +297,6 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-
-      {/* Map Section */}
-      <section className="bg-gray-50 py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our Location</h2>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              Visit our office to discuss your sourcing and export needs in person.
-            </p>
-          </div>
-          <div className="mt-16 overflow-hidden rounded-lg bg-gray-200 shadow-xl">
-            <Image
-              src="/placeholder.svg?height=600&width=1200"
-              alt="Office Location Map"
-              width={1200}
-              height={600}
-              className="h-[400px] w-full object-cover"
-            />
-          </div>
-        </div>
-      </section>
     </div>
   )
 }
-
