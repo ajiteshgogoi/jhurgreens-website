@@ -10,14 +10,14 @@ export default function ProductsPage() {
       id: "agricultural",
       title: "Agricultural Products",
       description: "Fresh and processed agricultural products from trusted farms and producers.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/products/agri.jpg",
       products: ["Fresh Fruits & Vegetables", "Grains & Cereals", "Nuts & Seeds", "Spices & Herbs", "Processed Foods"],
     },
     {
       id: "consumer",
       title: "Consumer Goods",
       description: "High-quality consumer goods from reliable manufacturers worldwide.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/products/consumer.jpg",
       products: [
         "Home & Kitchen Appliances",
         "Electronics & Gadgets",
@@ -30,7 +30,7 @@ export default function ProductsPage() {
       id: "industrial",
       title: "Industrial Equipment",
       description: "Durable industrial equipment and machinery for various business needs.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/products/industrial.jpg",
       products: [
         "Manufacturing Machinery",
         "Construction Equipment",
@@ -43,7 +43,7 @@ export default function ProductsPage() {
       id: "packaging",
       title: "Packaging Materials",
       description: "Innovative and sustainable packaging solutions for different industries.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/products/packaging.jpg",
       products: [
         "Plastic Packaging",
         "Paper & Cardboard",
@@ -56,7 +56,7 @@ export default function ProductsPage() {
       id: "textiles",
       title: "Textiles & Fabrics",
       description: "Quality textiles and fabrics for fashion and home furnishing industries.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/products/textiles.jpg",
       products: [
         "Cotton & Natural Fibers",
         "Synthetic Fabrics",
@@ -69,7 +69,7 @@ export default function ProductsPage() {
       id: "electronics",
       title: "Electronics & Components",
       description: "Electronic components and finished products for various applications.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/products/electronics.jpg",
       products: [
         "Consumer Electronics",
         "Electronic Components",
@@ -224,11 +224,13 @@ export default function ProductsPage() {
               </div>
             </div>
             <Image
-              src="/placeholder.svg?height=600&width=800"
-              alt="Custom Product Sourcing"
+              src="/images/products/bottom.jpg"
+              alt="Custom Product Sourcing Solutions at JhurGreens International"
               className="w-full rounded-xl shadow-xl ring-1 ring-gray-400/10"
-              width={800}
-              height={600}
+              width={1200}
+              height={800}
+              quality={85}
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
         </div>

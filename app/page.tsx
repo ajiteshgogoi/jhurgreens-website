@@ -119,17 +119,17 @@ export default function Home() {
               {
                 name: "Agricultural Products",
                 description: "Fresh and processed agricultural products from trusted farms and producers.",
-                imageSrc: "/placeholder.svg?height=400&width=600",
+                imageSrc: "/images/products/agri.jpg",
               },
               {
                 name: "Consumer Goods",
                 description: "High-quality consumer goods from reliable manufacturers worldwide.",
-                imageSrc: "/placeholder.svg?height=400&width=600",
+                imageSrc: "/images/products/consumer.jpg",
               },
               {
                 name: "Industrial Equipment",
                 description: "Durable industrial equipment and machinery for various business needs.",
-                imageSrc: "/placeholder.svg?height=400&width=600",
+                imageSrc: "/images/products/industrial.jpg",
               },
             ].map((product) => (
               <Card key={product.name} className="flex flex-col overflow-hidden">
