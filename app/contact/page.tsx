@@ -1,54 +1,8 @@
-"use client"
-
-import type React from "react"
-
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
+import { Phone, Mail } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
-import { Phone, Mail, Send, CheckCircle } from "lucide-react"
+import { Button } from "@/components/ui/button"
 
 export default function ContactPage() {
-  const [formState, setFormState] = useState({
-    name: "",
-    email: "",
-    company: "",
-    phone: "",
-    message: "",
-  })
-
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  const [isSubmitted, setIsSubmitted] = useState(false)
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target
-    setFormState((prev) => ({ ...prev, [name]: value }))
-  }
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500))
-
-    setIsSubmitting(false)
-    setIsSubmitted(true)
-    setFormState({
-      name: "",
-      email: "",
-      company: "",
-      phone: "",
-      message: "",
-    })
-
-    // Reset success message after 5 seconds
-    setTimeout(() => {
-      setIsSubmitted(false)
-    }, 5000)
-  }
-
   return (
     <div className="flex flex-col min-h-[calc(100vh-64px)]">
       {/* Hero Section */}
@@ -64,144 +18,11 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Contact Form & Info */}
+      {/* Contact Info Section */}
       <section className="py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-            <div>
-              <h2 className="text-3xl font-bold tracking-tight text-gray-900">Get in Touch</h2>
-              <p className="mt-6 text-lg leading-8 text-gray-600">
-                Fill out the form below, and our team will get back to you as soon as possible.
-              </p>
-
-              {isSubmitted ? (
-                <div className="mt-8 rounded-lg bg-green-50 p-6 border border-green-200">
-                  <div className="flex items-center gap-3">
-                    <CheckCircle className="h-6 w-6 text-green-600" />
-                    <h3 className="text-lg font-semibold text-green-800">Message Sent!</h3>
-                  </div>
-                  <p className="mt-2 text-green-700">Thank you for reaching out. Our team will contact you shortly.</p>
-                </div>
-              ) : (
-                <form onSubmit={handleSubmit} className="mt-8 space-y-6">
-                  <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-                    <div>
-                      <label htmlFor="name" className="block text-sm font-semibold leading-6 text-gray-900">
-                        Name
-                      </label>
-                      <div className="mt-2.5">
-                        <Input
-                          type="text"
-                          name="name"
-                          id="name"
-                          autoComplete="name"
-                          required
-                          value={formState.name}
-                          onChange={handleChange}
-                        />
-                      </div>
-                    </div>
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-900">
-                        Email
-                      </label>
-                      <div className="mt-2.5">
-                        <Input
-                          type="email"
-                          name="email"
-                          id="email"
-                          autoComplete="email"
-                          required
-                          value={formState.email}
-                          onChange={handleChange}
-                        />
-                      </div>
-                    </div>
-                    <div>
-                      <label htmlFor="company" className="block text-sm font-semibold leading-6 text-gray-900">
-                        Company
-                      </label>
-                      <div className="mt-2.5">
-                        <Input
-                          type="text"
-                          name="company"
-                          id="company"
-                          autoComplete="organization"
-                          value={formState.company}
-                          onChange={handleChange}
-                        />
-                      </div>
-                    </div>
-                    <div>
-                      <label htmlFor="phone" className="block text-sm font-semibold leading-6 text-gray-900">
-                        Phone
-                      </label>
-                      <div className="mt-2.5">
-                        <Input
-                          type="tel"
-                          name="phone"
-                          id="phone"
-                          autoComplete="tel"
-                          value={formState.phone}
-                          onChange={handleChange}
-                        />
-                      </div>
-                    </div>
-                    <div className="sm:col-span-2">
-                      <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">
-                        Message
-                      </label>
-                      <div className="mt-2.5">
-                        <Textarea
-                          name="message"
-                          id="message"
-                          rows={4}
-                          required
-                          value={formState.message}
-                          onChange={handleChange}
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <Button type="submit" className="w-full bg-primary hover:bg-primary/90" disabled={isSubmitting}>
-                      {isSubmitting ? (
-                        <span className="flex items-center gap-2">
-                          <svg
-                            className="animate-spin -ml-1 mr-2 h-4 w-4 text-white"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                          >
-                            <circle
-                              className="opacity-25"
-                              cx="12"
-                              cy="12"
-                              r="10"
-                              stroke="currentColor"
-                              strokeWidth="4"
-                            ></circle>
-                            <path
-                              className="opacity-75"
-                              fill="currentColor"
-                              d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                            ></path>
-                          </svg>
-                          Sending...
-                        </span>
-                      ) : (
-                        <span className="flex items-center gap-2">
-                          <Send className="h-4 w-4" />
-                          Send Message
-                        </span>
-                      )}
-                    </Button>
-                  </div>
-                </form>
-              )}
-            </div>
-
-            <div className="space-y-10 lg:pl-10">
+          <div className="mx-auto max-w-2xl">
+            <div className="space-y-10">
               <div>
                 <h2 className="text-3xl font-bold tracking-tight text-gray-900">Contact Information</h2>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
@@ -226,7 +47,10 @@ export default function ContactPage() {
                       <Mail className="h-7 w-6 text-primary" aria-hidden="true" />
                     </dt>
                     <dd>
-                      <a className="hover:text-primary" href="mailto:info@jhurgreens.com">
+                      <a 
+                        className="hover:text-primary" 
+                        href="mailto:info@jhurgreens.com?subject=Business%20Inquiry&body=Hello%20Jhurgreens%20Team%2C%0D%0A%0D%0AI%20would%20like%20to%20inquire%20about%20your%20products%2Fservices.%0D%0A%0D%0ARegards"
+                      >
                         info@jhurgreens.com
                       </a>
                     </dd>
