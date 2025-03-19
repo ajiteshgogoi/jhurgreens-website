@@ -136,7 +136,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Our Team */}
+      {/* Our Team Section - Hidden for now
       <section className="py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
@@ -183,8 +183,9 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      */}
 
-      {/* Global Presence */}
+      {/* Global Presence Section - Hidden for now
       <section className="bg-gray-50 py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
@@ -217,6 +218,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      */}
 
       {/* CTA Section */}
       <section className="bg-primary">
@@ -239,4 +241,3 @@ export default function AboutPage() {
     </div>
   )
 }
-
