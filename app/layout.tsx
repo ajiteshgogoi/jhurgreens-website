@@ -116,7 +116,7 @@ export default function RootLayout({
                     "contactType": "sales",
                     "email": "info@jhurgreens.com",
                     "areaServed": "Worldwide",
-                    "availableLanguage": ["English", "Hindi"]
+                    "availableLanguage": ["English", "Hindi", "Assamese"]
                   },
                   "sameAs": [
                     "https://www.facebook.com/jhurgreens/",

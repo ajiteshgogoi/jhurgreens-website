@@ -123,7 +123,7 @@ export default function Home() {
               },
               {
                 name: "Consumer Goods",
-                description: "High-quality consumer goods from reliable manufacturers worldwide.",
+                description: "High-quality consumer goods from reliable Indian manufacturers.",
                 imageSrc: "/images/products/consumer.jpg",
               },
               {

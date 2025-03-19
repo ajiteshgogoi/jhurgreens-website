@@ -16,7 +16,7 @@ export default function ProductsPage() {
     {
       id: "consumer",
       title: "Consumer Goods",
-      description: "High-quality consumer goods from reliable manufacturers worldwide.",
+      description: "High-quality consumer goods from reliable Indian manufacturers.",
       image: "/images/products/consumer.jpg",
       products: [
         "Home & Kitchen Appliances",

@@ -84,7 +84,7 @@ export default function AboutPage() {
                     Our Mission
                   </dt>
                   <dd className="mt-2 text-base leading-7 text-gray-600">
-                    To connect businesses with quality products and reliable manufacturing partners worldwide,
+                    To connect businesses with quality products and reliable manufacturing partners,
                     simplifying global trade and fostering sustainable business relationships.
                   </dd>
                 </div>
