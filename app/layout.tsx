@@ -43,9 +43,9 @@ export const metadata: Metadata = {
     siteName: "JhurGreens International",
     images: [
       {
-        url: "/logo.png",
-        width: 1200,
-        height: 630,
+        url: "/og.png",
+        width: 1920,
+        height: 1080,
         alt: "JhurGreens International Logo",
       },
     ],
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "JhurGreens International | Leading Export & Sourcing Agency in India",
     description: "JhurGreens International is a premier sourcing agency and exporter from India, specializing in product sourcing, manufacturing partnerships, quality inspection and shipping logistics.",
-    images: ["/logo.png"],
+    images: ["/og.png"],
     creator: "@jhurgreens",
     site: "@jhurgreens",
   },
@@ -96,9 +96,9 @@ export default function RootLayout({
                   "url": "https://jhurgreens.com",
                   "logo": {
                     "@type": "ImageObject",
-                    "url": "https://jhurgreens.com/logo.png",
-                    "width": 180,
-                    "height": 60
+                    "url": "https://jhurgreens.com/og.png",
+                    "width": 1920,
+                    "height": 1080
                   },
                   "address": {
                     "@type": "PostalAddress",
