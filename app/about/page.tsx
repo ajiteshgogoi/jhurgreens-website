@@ -48,8 +48,8 @@ export default function AboutPage() {
               </div>
             </div>
             <Image
-              src="/placeholder.svg?height=600&width=800"
-              alt="JhurGreens Story"
+              src="/images/about/story.jpg"
+              alt="JhurGreens International Story"
               className="w-full rounded-xl shadow-xl ring-1 ring-gray-400/10"
               width={800}
               height={600}
@@ -63,8 +63,8 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center">
             <Image
-              src="/placeholder.svg?height=600&width=800"
-              alt="JhurGreens Mission"
+              src="/images/about/mission.jpg"
+              alt="JhurGreens International Mission and Values"
               className="w-full rounded-xl shadow-xl ring-1 ring-gray-400/10 lg:order-last"
               width={800}
               height={600}
